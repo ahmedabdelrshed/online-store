@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <!-- BOOTSTRAP STYLE CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- MAIN Tampelte STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ICONS STYLE -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Google Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&family=Work+Sans:ital,wght@0,100;0,500;0,700;0,800;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-4 ms-lg-5" href="#"><img src="images/icon.png" alt=""
+                        style="height: 60px; width: 60px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#computers">Computers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#MobilePhones">MobilePhones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HeadPhones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SmartWatch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control m-3 border-3 border-warning rounded-3" type="search"
+                            placeholder="Search" aria-label="Search">
+                    </form>
+                    <form class="d-flex">
+                        <button class="btn btn-warning  btn-outline-dark me-3 border-warning"
+                            type="submit">Search</button>
+                        <button class="btn btn-warning  btn-outline-dark me-3 border-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" type="submit">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--START  Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Username</label>
+                                <input type="text" placeholder="Username" required class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" placeholder="Password" required class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-warning   border-warning" data-bs-dismiss="modal">Log
+                                in</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END  Modal -->
+
+    </header>
+    <div class="fixed-icon">
+        <div class="social d-flex flex-column justify-content-between ms-auto">
+            <a href="https://www.linkedin.com/in/ahmed-abdelrashed-581607254"><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <!-- END HEADER -->
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/photo-1591370874773-6702e8f12fd8.avif" class="d-block w-100"
+                        style="height: calc(100vh);" alt="...">
+                    <div class="carousel-caption rounded bg-light">
+                        <h2 class="text-warning">Computers</h2>
+                        <p class="text-dark">A computer is a machine that can store and process information.</p>
+                        <button class="btn btn-warning  btn-outline-dark me-3 border-warning" type="submit">Show
+                            more</button>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/photo-1615494488092-b13b68fe0eb5.avif" class="d-block w-100"
+                        style="height: calc(100vh);" alt="...">
+                    <div class="carousel-caption rounded bg-light">
+                        <h2 class="text-warning">MobilePhones</h2>
+                        <p class="text-dark">MobilePhone is portable telephone that can make and receive calls.</p>
+                        <button class="btn btn-warning  btn-outline-dark me-3 border-warning" type="submit">Show
+                            more</button>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/photo-1505740420928-5e560c06d30e.avif" class="d-block w-100"
+                        style="height: calc(100vh);" alt="...">
+                    <div class="carousel-caption rounded bg-light">
+                        <h2 class="text-warning">HeadPhones</h2>
+                        <p class="text-dark">Best wireless headphones.Our pick.JBL Tour One M2.</p>
+                        <button class="btn btn-warning  btn-outline-dark me-3 border-warning" type="submit">Show
+                            more</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/photo-1579586337278-3befd40fd17a.avif" class="d-block w-100"
+                        style="height: calc(100vh);" alt="...">
+                    <div class="carousel-caption rounded bg-light">
+                        <h2 class="text-warning">SmartWatch</h2>
+                        <p class="text-dark">A smartwatch is a wearable computer in the form of a watch.</p>
+                        <button class="btn btn-warning  btn-outline-dark me-3 border-warning" type="submit">Show
+                            more</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="my-3 p-3 mx-2  rounded-3 text-center bg-dark "
+            style="background-image: linear-gradient(to right,#fea00a 0%, #000000 100%);">
+            <img src="images/blackfriday_title.png" style="width: 100px; height: 80; ">
+        </div>
+
+    </main>
+    <!-- START PRODUCTS FOR COMPUTERS -->
+    <section id="computers">
+        <hr class="mx-3">
+        <div class="accordion mx-2" id="accordionExample">
+
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed btn btn-dark"
+                        style="background-image: linear-gradient(to right,#fea00a 0%, #0000002b 100%);" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        What is the Computer ?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A <strong>computer</strong> is a machine that can be programmed to carry out sequences of
+                        arithmetic or logical
+                        operations (computation) automatically. Modern digital electronic computers can perform generic
+                        sets
+                        of operations known as programs. These programs enable computers to perform a wide range of
+                        tasks.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" d-flex mx-3  justify-content-between my-3">
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning">Sort by</button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Price: Low to High</a>
+                    <a class="dropdown-item" href="#">Price: High to Low</a>
+                    <hr class="dropdown-divider">
+                    <a class="dropdown-item" href="#">Best Seller</a>
+
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning">Featured Brands</button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Dell</a>
+                    <a class="dropdown-item" href="#">hp</a>
+                    <a class="dropdown-item" href="#">Lenovo</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-dark">Colors</button>
+                <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Black</a>
+                    <a class="dropdown-item" href="#">White</a>
+                    <a class="dropdown-item" href="#">Silver</a>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-3">
+        <div class="container">
+            <div class="row">
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1">
+                    <img class="card-img-top" src="images/81whwdW8ERL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Dell Alienware <i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span id="shop" class="number">0</span></h4>
+                        <p class="card-text"> R5 Gaming Laptop | Core Ryzen 9 - 1TB SSD
+                            - 64GB RAM - 3080 Ti | 8 Cores @ 4.9 GHz - 12GB GDDR6X </p>
+                        <p class="card-text"><span class="bg-warning text-dark">$2,994.99</span>
+                            List:<del>$2,995.99</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1">
+                    <img class="card-img-top" src="images/71bphKmt0DL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Lenovo Pad <i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                        <p class="card-text">Intel Celeron N4020, 4GB RAM, 64GB Storage, Intel UHD Graphics 600, Win 11
+                            in S Mode, Cloud Grey</p>
+                        <p class="card-text"><span class="bg-warning text-dark">$164.00</span> List:<del>$209.99</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1">
+                    <img class="card-img-top" src="images/71OyrTkxpGL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">ASUS ROG <i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                        <p class="card-text">144Hz, GeForce RTX 3050, AMD Ryzen™ 7 6800H/HS, 16GB DDR5, 512GB PCIe SSD,
+                            Windows 11.</p>
+                        <p class="card-text"><span class="bg-warning text-dark">899.99</span> List:<del>$999.99</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1">
+                    <img class="card-img-top" src="images/71Ekj79pZtL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Dell Alienware<i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                        <p class="card-text"> R5 Gaming Laptop | Core Ryzen 9 - 1TB SSD
+                            - 64GB RAM - 3080 Ti | 8 Cores @ 4.9 GHz - 12GB GDDR6X | 11 Home in S Mode </p>
+                        <p class="card-text"><span class="bg-warning text-dark">$2,994.99</span>
+                            List:<del>$2,995.99</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4  mx-md-1">
+                    <img class="card-img-top" src="images/51RoBmK-NwL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Lenovo Pad<i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                        <p class="card-text">Intel Celeron N4020, 4GB RAM, 64GB Storage, Intel UHD Graphics 600, Win 11
+                            in S Mode, Cloud Grey</p>
+                        <p class="card-text"><span class="bg-warning text-dark">$164.00</span> List:<del>$209.99</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                    <img class="card-img-top" src="images/61HxxpI0yQL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">ASUS ROG <i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                        <p class="card-text">144Hz, GeForce RTX 3050, AMD Ryzen™ 7 6800H/HS, 16GB DDR5, 512GB PCIe SSD,
+                            Windows 11.</p>
+                        <p class="card-text"><span class="bg-warning text-dark">899.99</span> List:<del>$999.99</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END PRODUCTS FOR COMPUTERS -->
+
+    <!-- START PRODUCTS FOR MobilePhones -->
+    <section id="MobilePhones">
+        <hr class="mx-3">
+        <div class="accordion mx-2" id="accordionExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed btn btn-dark"
+                        style="background-image: linear-gradient(to right,#fea00a 0%, #0000002b 100%);" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        What is the MobilePhones ?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Mobile phones</strong> , also known as "cell phones" in some regions, are portable
+                        electronic devices
+                        designed for wireless communication.They have become an integral part of modern life and are
+                        used for a wide range of purposes beyond just making phone calls
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" d-flex mx-3  justify-content-between my-3">
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning">Sort by</button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Price: Low to High</a>
+                    <a class="dropdown-item" href="#">Price: High to Low</a>
+                    <hr class="dropdown-divider">
+                    <a class="dropdown-item" href="#">Best Seller</a>
+
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning">Featured Brands</button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Iphone</a>
+                    <a class="dropdown-item" href="#">Samsung</a>
+                    <a class="dropdown-item" href="#">Oppo</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-dark">Colors</button>
+                <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Black</a>
+                    <a class="dropdown-item" href="#">White</a>
+                    <a class="dropdown-item" href="#">Silver</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1 ">
+                    <img class="card-img-top" src="images/iphone.webp" alt="Card image" style="height: 368.38px;">
+                    <div class="card-body">
+                        <h4 class="card-title">IPhone 15 Pro <i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span id="shop" class="number">0</span></h4>
+                        <p class="card-text"> Apple iPhone 15 Pro Max (256 GB) - Deep Purple, Bluetooth, Wi-Fi + 12
+                            months extended warranty</p>
+                        <p class="card-text"><span class="bg-warning text-dark">$2,994.99</span>
+                            List:<del>$2,995.99</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1 ">
+                    <img class="card-img-top" src="images/samsung.webp" alt="Card image" style="height: 368.38px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Samsung S23 <i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                        <p class="card-text">Samsung Galaxy S23 Ultra, 12GB, Phantom Black, Mobile Phone, Dual SIM, 1
+                            Year Manufacturer Warranty</p>
+                        <p class="card-text"><span class="bg-warning text-dark">EGP47,469</span>
+                            List:<del>EGP48,469</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1 ">
+                    <img class="card-img-top" src="images/oppo.jpg" alt="Card image" style="height: 366.38px;">
+                    <div class="card-body">
+                        <h4 class="card-title">OPPO Reno10 5G <i class="fas fa-heart mx-4  "></i> <i
+                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                        <p class="card-text">256GB 8GB Silvery Grey + Free Enco earbuds + 2in1 Gift BOX + 12 months
+                            extended warranty</p>
+                        <p class="card-text"><span class="bg-warning text-dark">EGP17,310</span>
+                            List:<del>EGP18,310</del>
+                        </p>
+                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center my-4">
+                <ul class="pagination pagination-lg text-warning">
+                    <li class="page-item"><a class="page-link text-dark" href="#"><i
+                                class="fas fa-chevron-left"></i></a></li>
+                    <li class="page-item"><a class="page-link text-warning" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link text-warning" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link text-warning" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link text-warning" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link text-warning" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link text-dark" href="#"><i
+                                class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="mx-3">
+    </section>
+    <!-- END PRODUCTS FOR MobilePhones -->
+    <!-- START SECTION FOR BEST SELLER -->
+    <section class="best-seller">
+        <div class="my-3 p-3 mx-2  rounded-3 text-center bg-dark text-light"
+            style="background-image: linear-gradient(to right,#fea00a 0%, #000000 100%); font-style: italic; cursor: pointer;">
+            <h2>BEST SELLER</h2>
+        </div>
+        <div class="container d-flex justify-content-between ">
+            <button class="btn btn-warning  btn-outline-dark  border-warning computer mx-lg-5">Computers</button>
+            <button class="btn btn-warning  btn-outline-dark  border-warning mobile mx-lg-5">MobilePhones</button>
+            <button class="btn btn-warning  btn-outline-dark  border-warning watch mx-lg-5">SmartWatch</button>
+        </div>
+        <hr class="mx-5">
+        <div class="container">
+            <div class="computers">
+                <div class="row">
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/71Ekj79pZtL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Dell Alienware<i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                            <p class="card-text"> R5 Gaming Laptop | Core Ryzen 9 - 1TB SSD
+                                - 64GB RAM - 3080 Ti | 8 Cores @ 4.9 GHz - 12GB GDDR6X | 11 Home in S Mode </p>
+                            <p class="card-text"><span class="bg-warning text-dark">$2,994.99</span>
+                                List:<del>$2,995.99</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/61HxxpI0yQL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">ASUS ROG <i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                            <p class="card-text">144Hz, GeForce RTX 3050, AMD Ryzen™ 7 6800H/HS, 16GB DDR5, 512GB PCIe
+                                SSD,
+                                Windows 11.</p>
+                            <p class="card-text"><span class="bg-warning text-dark">899.99</span>
+                                List:<del>$999.99</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/71bphKmt0DL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Lenovo Pad <i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                            <p class="card-text">Intel Celeron N4020, 4GB RAM, 64GB Storage, Intel UHD Graphics 600, Win
+                                11
+                                in S Mode, Cloud Grey</p>
+                            <p class="card-text"><span class="bg-warning text-dark">$164.00</span>
+                                List:<del>$209.99</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobiles">
+                <div class="row ">
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/iphone.webp" alt="Card image" style="height: 368.38px;">
+                        <div class="card-body">
+                            <h4 class="card-title">IPhone 15 Pro <i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span id="shop" class="number">0</span></h4>
+                            <p class="card-text"> Apple iPhone 15 Pro Max (256 GB) - Deep Purple, Bluetooth, Wi-Fi + 12
+                                months extended warranty</p>
+                            <p class="card-text"><span class="bg-warning text-dark">$2,994.99</span>
+                                List:<del>$2,995.99</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/samsung.webp" alt="Card image" style="height: 368.38px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Samsung S23 <i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                            <p class="card-text">Samsung Galaxy S23 Ultra, 12GB, Phantom Black, Mobile Phone, Dual SIM,
+                                1
+                                Year Manufacturer Warranty</p>
+                            <p class="card-text"><span class="bg-warning text-dark">EGP47,469</span>
+                                List:<del>EGP48,469</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/oppo.jpg" alt="Card image" style="height: 366.38px;">
+                        <div class="card-body">
+                            <h4 class="card-title">OPPO Reno10 5G <i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                            <p class="card-text">256GB 8GB Silvery Grey + Free Enco earbuds + 2in1 Gift BOX + 12 months
+                                extended warranty</p>
+                            <p class="card-text"><span class="bg-warning text-dark">EGP17,310</span>
+                                List:<del>EGP18,310</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="watches">
+                <div class="row ">
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/smart watch-1_.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Smart Watch T800 <i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                            <p class="card-text">Ultra Men Two Watch NFC Door Unlock Smartwatch </p>
+                            <p class="card-text"><span class="bg-warning text-dark">EGP17,310</span>
+                                List:<del>EGP565</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/smartwatch-2.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Samsung Gear S3<i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                            <p class="card-text">Ultra Men Two Watch NFC Door Unlock Smartwatch </p>
+                            <p class="card-text"><span class="bg-warning text-dark">EGP17,310</span>
+                                List:<del>EGP565</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
+                        <img class="card-img-top" src="images/samrtwatch-3.jpg" alt="Card image"
+                            style="max-height: 338px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Huawei Watch GT3<i class="fas fa-heart mx-4  "></i> <i
+                                    class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
+                            <p class="card-text">Ultra Men Two Watch NFC Door Unlock Smartwatch </p>
+                            <p class="card-text"><span class="bg-warning text-dark">EGP17,310</span>
+                                List:<del>EGP565</del>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION FOR BEST SELLER -->
+    <!-- START SECTION FOR Accessories -->
+    <!-- <section class="accessories">
+        <hr class="mx-3">
+        <div class="container">
+            <div class="iteam d-flex ">
+                <div class="iteam-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, ratione. Fugiat reprehenderit
+                        tempore quidem reiciendis dignissimos minima, accusamus, quae voluptas id tempora vero facere
+                        esse impedit quis, provident doloremque architecto!</p>
+                </div>
+                <div class="image">
+                    <img src="images/Airbods.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- END SECTION FOR Accessories -->
+
+    <!-- START SECTION FOR OUR TEAM -->
+    <section class="our-team">
+        <div class="my-3 p-3 mx-2  rounded-3 text-center bg-dark text-light"
+            style="background-image: linear-gradient(to right,#fea00a 0%, #000000 100%); font-style: italic">
+            <h2>OUR TEAM MEMBERS</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-md-1 mx-sm-1 mx-lg-5 mt-4 mb-3 rounded-5 border-warning"
+                    style="height: 300px; background-image: linear-gradient(to bottom,#ffc107 0%, #000000 100%);">
+                    <div class="team-img">
+                        <img src="images/WhatsApp Image 2023-08-09 at 15.31.33_0cae11fb.jpg" alt="">
+                    </div>
+                    <div class="card-body text-light text-center">
+                        <h4 class="card-title">Eng/Ahmed Abdelrashed</h4>
+                        <p class="card-text">Position: Project Manager</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mx-md-1 mx-sm-1 mt-4 mb-3 rounded-5 border-warning"
+                    style="height: 300px; background-image: linear-gradient(to bottom,#ffc107 0%, #000000 100%);">
+                    <div class="team-img">
+                        <img src="images/WhatsApp Image 2023-11-07 at 19.47.34_d8ca67e0.jpg" alt="">
+                    </div>
+                    <div class="card-body text-light text-center">
+                        <h4 class="card-title">Eng/Ramzy Ashraf</h4>
+                        <p class="card-text">Position: Project Manager</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mx-md-1 mx-sm-1 mt-4 mb-3 rounded-5 border-warning"
+                    style="height: 300px; background-image: linear-gradient(to bottom,#ffc107 0%, #000000 100%);">
+                    <div class="team-img">
+                        <img src="images/Ahmed Abdelhamed.jpg" alt="">
+                    </div>
+                    <div class="card-body text-light text-center">
+                        <h4 class="card-title">Eng/Ahmed Abdelhamed</h4>
+                        <p class="card-text">Position: Project Manager</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mx-md-1 mx-sm-1 mt-4 mb-3 rounded-5 border-warning"
+                    style="height: 300px; background-image: linear-gradient(to bottom,#ffc107 0%, #000000 100%);">
+                    <div class="team-img">
+                        <img src="images/Abdo.jpg" alt="">
+                    </div>
+                    <div class="card-body text-light text-center">
+                        <h4 class="card-title">Eng/Abdo Owais</h4>
+                        <p class="card-text">Position: Project Manager</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mx-md-1 mx-sm-1 mt-4 mb-3 rounded-5 border-warning"
+                    style="height: 300px; background-image: linear-gradient(to bottom,#ffc107 0%, #000000 100%);">
+                    <div class="team-img">
+                        <img src="images/osasa.jpg" alt="">
+                    </div>
+                    <div class="card-body text-light text-center">
+                        <h4 class="card-title">Eng/Mostafa Osama</h4>
+                        <p class="card-text">Position: Project Manager</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mx-md-1 mx-sm-1 mt-4 mb-3 rounded-5 border-warning"
+                    style="height: 300px; background-image: linear-gradient(to bottom,#ffc107 0%, #000000 100%);">
+                    <div class="team-img">
+                        <img src="images/WhatsApp Image 2023-08-09 at 15.31.33_0cae11fb.jpg" alt="">
+                    </div>
+                    <div class="card-body text-light text-center">
+                        <h4 class="card-title">Eng/Ahmed Abdelrashed</h4>
+                        <p class="card-text">Position: Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION FOR OUR TEAM -->
+
+    <!-- START SECTION FOR FEEDBACK -->
+    <section>
+        <div class="container form my-5">
+        <form action="" class="mx-lg-5 contact-form">
+            <h2>Feel Free to Send Your Feedback</h2>
+            <div class="mb-3 mt-3">
+                <label for="name" class="form-label ">Your Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Full Name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter Email" id="emailAddress" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="comment">Feedback:</label>
+                <textarea class="form-control" rows="5" id="feedback" name="text"placeholder="Feedback" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning btn-outline-dark">Send</button>
+        </form>
+    </div>
+    </section>
+    <!-- END SECTION FOR FEEDBACK -->
+<footer>
+    <div class="container">
+    <div class="cta d-block d-md-flex align-items-center px-5">
+        <div>
+        <h2 class="mb-0">Ready for a next project?</h2>
+        <h3 class="text-dark">Let's get started!</h3>
+        </div>
+        <div class="ml-auto">
+        <a href="#" class="btn btn-dark rounded-0 py-3 px-5">Contact us</a>
+        </div>
+        </div>
+        <div class="social">
+            <h2> Follow Us</h2>
+            <a href="https://www.linkedin.com/in/ahmed-abdelrashed-581607254"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100024575770751&mibextid=ZbWKwL"><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+    <!-- BOOTSTRAP JAVA SCRIPT -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- MAIN Tampelte JAVA SCRIPT -->
+    <script src="JS/script.js"></script>
+    <script src="JS/sendemail.js"></script>
+</body>
+
+</html>
