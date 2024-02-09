@@ -1,25 +1,25 @@
-.btn-color{
-    background-color: #0e1c36;
-    color: #fff;
-    
-  }
-  
-  .profile-image-pic{
-    height: 200px;
-    width: 200px;
-  
-  }
-  
-  
-  
-  .cardbody-color{
-    background-color: #ebf2fa;
-  }
-  
-  a{
-    text-decoration: none;
-  }
+.btn-color {
+  background-color: #0e1c36;
+  color: #fff;
 
-  .alert{
-    display: none;
-  }
+}
+
+.profile-image-pic {
+  height: 150px;
+  width: 150px;
+
+}
+
+
+
+.cardbody-color {
+  background-color: #ebf2fa;
+}
+
+a {
+  text-decoration: none;
+}
+
+.alert {
+  display: none;
+}

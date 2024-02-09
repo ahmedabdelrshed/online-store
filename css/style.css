@@ -25,7 +25,7 @@ body {
   background: rgb(239, 187, 90);
 }
 
-.fixed-icon{
+.fixed-icon {
   position: fixed;
   top: 400px;
   right: 20px;
@@ -164,11 +164,32 @@ footer {
   margin-top: 8px;
   transition: 0.2s;
 }
-.social a:hover{
+
+.social a:hover {
   background-color: #141d2a;
 }
+
 .social a i {
   line-height: 50px;
   font-size: 25px;
   color: white;
+}
+
+
+/* ///////////////////////////// Header ///////////////////*/
+#log-out {
+  display: none;
+  /* display: inline; */
+}
+
+#user {
+  cursor: auto;
+  display: none;
+  width: fit-content;
+}
+
+@media (max-width:767px) {
+  #user {
+    margin: 10px 0;
+  }
 }

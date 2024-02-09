@@ -13,12 +13,6 @@
     <link rel="stylesheet" href="css/login.css">
     <!-- ICONS STYLE -->
     <link rel="stylesheet" href="css/all.css">
-    <!-- Google Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&family=Work+Sans:ital,wght@0,100;0,500;0,700;0,800;1,200;1,300;1,400&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -55,15 +49,13 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control m-3 border-3 border-warning rounded-3" type="search"
-                            placeholder="Search" aria-label="Search">
-                    </form>
-                    <form class="d-flex">
-                        <button class="btn btn-warning  btn-outline-dark me-3 border-warning"
-                            type="submit">Search</button>
+                    <form class="d-flex mx-2 align-items-center" id="sign">
                         <a href="login.html" class="btn btn-warning  btn-outline-dark me-3 border-warning"
                             type="submit">Log in</a>
+                        <a href="register.html" class="btn btn-warning  btn-outline-dark me-3 border-warning"
+                            type="submit">Sign in</a>
+                        <a href="#" class="btn btn-warning  btn-outline-dark me-3 border-warning" type="submit"
+                            id="log-out">Log Out</a>
                     </form>
                 </div>
             </div>
@@ -77,8 +69,8 @@
                     <form class="card-body cardbody-color p-lg-5">
 
                         <div class="text-center">
-                            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png"
-                                class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" alt="profile">
+                            <img src="images/icon.png"
+                                class="img-fluid profile-image-pic img-thumbnail rounded-circle my-2" alt="profile">
                         </div>
                         <div class="alert alert-danger alert-dismissible" id="massage">
                             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
