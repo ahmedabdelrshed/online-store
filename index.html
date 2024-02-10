@@ -13,7 +13,7 @@
     <!-- ICONS STYLE -->
     <link rel="stylesheet" href="css/all.css">
     <!-- Google Font Family -->
-    
+
 </head>
 
 <body>
@@ -47,6 +47,16 @@
                     </ul>
                     <div id="user" class="btn  border-1 border-warning mx-2 "><span class="text-warning">Welcome,</span>
                         <span id="uname"></span>
+                    </div>
+                    <div class="shopping-cart"><i id="cart" class="fas fa-shopping-cart text-warning mx-3"
+                            style='font-size:25px; cursor: pointer;'></i>
+                        <span class="number" id='number-items'>0</span>
+                        <div class="cart-items">
+                            <div>
+
+                            </div>
+                            <a href="#">View All Products</a>
+                        </div>
                     </div>
                     <form class="d-flex mx-2 align-items-center" id="sign">
                         <a href="login.html" class="btn btn-warning  btn-outline-dark me-3 border-warning"
@@ -170,81 +180,7 @@
         </div>
         <hr class="mx-3">
         <div class="container">
-            <div class="row">
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1">
-                    <img class="card-img-top" src="images/81whwdW8ERL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Dell Alienware <i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span id="shop" class="number">0</span></h4>
-                        <p class="card-text"> R5 Gaming Laptop | Core Ryzen 9 - 1TB SSD
-                            - 64GB RAM - 3080 Ti | 8 Cores @ 4.9 GHz - 12GB GDDR6X </p>
-                        <p class="card-text"><span class="bg-warning text-dark">$2,994.99</span>
-                            List:<del>$2,995.99</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1">
-                    <img class="card-img-top" src="images/71bphKmt0DL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Lenovo Pad <i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
-                        <p class="card-text">Intel Celeron N4020, 4GB RAM, 64GB Storage, Intel UHD Graphics 600, Win 11
-                            in S Mode, Cloud Grey</p>
-                        <p class="card-text"><span class="bg-warning text-dark">$164.00</span> List:<del>$209.99</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1">
-                    <img class="card-img-top" src="images/71OyrTkxpGL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">ASUS ROG <i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
-                        <p class="card-text">144Hz, GeForce RTX 3050, AMD Ryzen™ 7 6800H/HS, 16GB DDR5, 512GB PCIe SSD,
-                            Windows 11.</p>
-                        <p class="card-text"><span class="bg-warning text-dark">899.99</span> List:<del>$999.99</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1">
-                    <img class="card-img-top" src="images/71Ekj79pZtL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Dell Alienware<i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
-                        <p class="card-text"> R5 Gaming Laptop | Core Ryzen 9 - 1TB SSD
-                            - 64GB RAM - 3080 Ti | 8 Cores @ 4.9 GHz - 12GB GDDR6X | 11 Home in S Mode </p>
-                        <p class="card-text"><span class="bg-warning text-dark">$2,994.99</span>
-                            List:<del>$2,995.99</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4  mx-md-1">
-                    <img class="card-img-top" src="images/51RoBmK-NwL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Lenovo Pad<i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
-                        <p class="card-text">Intel Celeron N4020, 4GB RAM, 64GB Storage, Intel UHD Graphics 600, Win 11
-                            in S Mode, Cloud Grey</p>
-                        <p class="card-text"><span class="bg-warning text-dark">$164.00</span> List:<del>$209.99</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4">
-                    <img class="card-img-top" src="images/61HxxpI0yQL._AC_UY327_FMwebp_QL65_.webp" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">ASUS ROG <i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
-                        <p class="card-text">144Hz, GeForce RTX 3050, AMD Ryzen™ 7 6800H/HS, 16GB DDR5, 512GB PCIe SSD,
-                            Windows 11.</p>
-                        <p class="card-text"><span class="bg-warning text-dark">899.99</span> List:<del>$999.99</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
+            <div class="row" id="computers2">
 
             </div>
         </div>
@@ -276,46 +212,10 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1 ">
-                    <img class="card-img-top" src="images/iphone.webp" alt="Card image" style="height: 368.38px;">
-                    <div class="card-body">
-                        <h4 class="card-title">IPhone 15 Pro <i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span id="shop" class="number">0</span></h4>
-                        <p class="card-text"> Apple iPhone 15 Pro Max (256 GB) - Deep Purple, Bluetooth, Wi-Fi + 12
-                            months extended warranty</p>
-                        <p class="card-text"><span class="bg-warning text-dark">$2,994.99</span>
-                            List:<del>$2,995.99</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1 ">
-                    <img class="card-img-top" src="images/samsung.webp" alt="Card image" style="height: 368.38px;">
-                    <div class="card-body">
-                        <h4 class="card-title">Samsung S23 <i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
-                        <p class="card-text">Samsung Galaxy S23 Ultra, 12GB, Phantom Black, Mobile Phone, Dual SIM, 1
-                            Year Manufacturer Warranty</p>
-                        <p class="card-text"><span class="bg-warning text-dark">EGP47,469</span>
-                            List:<del>EGP48,469</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-4 col-sm-6 mx-lg-5 mt-4 mx-md-1 ">
-                    <img class="card-img-top" src="images/oppo.jpg" alt="Card image" style="height: 366.38px;">
-                    <div class="card-body">
-                        <h4 class="card-title">OPPO Reno10 5G <i class="fas fa-heart mx-4  "></i> <i
-                                class="icon fa fa-cart-plus  "></i><span class="number">0</span></h4>
-                        <p class="card-text">256GB 8GB Silvery Grey + Free Enco earbuds + 2in1 Gift BOX + 12 months
-                            extended warranty</p>
-                        <p class="card-text"><span class="bg-warning text-dark">EGP17,310</span>
-                            List:<del>EGP18,310</del>
-                        </p>
-                        <a href="#" class="btn btn-warning btn-outline-dark">More Details</a>
-                    </div>
-                </div>
+            <div class="row" id="Mobiles">
+
+
+
             </div>
             <div class="d-flex justify-content-center my-4">
                 <ul class="pagination pagination-lg text-warning">
@@ -340,9 +240,9 @@
             <h2>BEST SELLER</h2>
         </div>
         <div class="container d-flex justify-content-between ">
-            <button class="btn btn-warning  btn-outline-dark  border-warning computer mx-lg-5">Computers</button>
-            <button class="btn btn-warning  btn-outline-dark  border-warning mobile mx-lg-5">MobilePhones</button>
-            <button class="btn btn-warning  btn-outline-dark  border-warning watch mx-lg-5">SmartWatch</button>
+            <button class="btn btn-warning  btn-outline-dark  border-warning computer3 mx-lg-5">Computers</button>
+            <button class="btn btn-warning  btn-outline-dark  border-warning mobile3 mx-lg-5">MobilePhones</button>
+            <button class="btn btn-warning  btn-outline-dark  border-warning watch3 mx-lg-5">SmartWatch</button>
         </div>
         <hr class="mx-5">
         <div class="container">
