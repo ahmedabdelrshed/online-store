@@ -56,7 +56,7 @@ var products = [
     title: "Lenovo Pad ",
     description:
       "Intel Celeron N4020, 4GB RAM, 64GB Storage, Intel UHD Graphics 600, Win 11 in S Mode, Cloud Grey",
-    price: 164.0,
+    price: 164,
     img: "images/71bphKmt0DL._AC_UY327_FMwebp_QL65_.webp",
   },
   {
@@ -64,7 +64,7 @@ var products = [
     title: "ASUS ROG ",
     description:
       "144Hz, GeForce RTX 3050, AMD Ryzen™ 7 6800H/HS, 16GB DDR5, 512GB PCIe SSD,Windows 11.",
-    price: 899.99,
+    price: 899,
     img: "images/71OyrTkxpGL._AC_UY327_FMwebp_QL65_.webp",
   },
   {
@@ -80,7 +80,7 @@ var products = [
     title: "Lenovo Pad",
     description:
       "Intel Celeron N4020, 4GB RAM, 64GB Storage, Intel UHD Graphics 600, Win 11 in S Mode, Cloud Grey",
-    price: 164.0,
+    price: 164,
     img: "images/51RoBmK-NwL._AC_UY327_FMwebp_QL65_.webp",
   },
   {
@@ -88,7 +88,7 @@ var products = [
     title: "ASUS ROG",
     description:
       "144Hz, GeForce RTX 3050, AMD Ryzen™ 7 6800H/HS, 16GB DDR5, 512GB PCIe SSD,Windows 11.",
-    price: 899.99,
+    price: 899,
     img: "images/61HxxpI0yQL._AC_UY327_FMwebp_QL65_.webp",
   },
   {
@@ -176,6 +176,7 @@ function Add_to_cart(id, th) {
   let item = products.find((e) => e.id === id);
   if (th.innerHTML === "Add To Cart") {
     cart_products.push({ ...item, count: 1 });
+    localStorage.setItem('cart_items',JSON.stringify(cart_products))
     n_item_cart.innerHTML = cart_products.length;
     draw_cart_items(cart_products.slice(0, 3));
     th.innerHTML = "Remove From Cart";
@@ -187,6 +188,7 @@ function Add_to_cart(id, th) {
     th.classList.add("btn-warning");
     let x = cart_products.indexOf(item);
     cart_products.splice(x, 1);
+    localStorage.setItem('cart_items',JSON.stringify(cart_products))
     n_item_cart.innerHTML = cart_products.length;
     if (x <= 2) {
       count--;
@@ -212,6 +214,7 @@ function draw_cart_items(items) {
 function plus(id, i) {
   // Plus Count of the item by one
   cart_products.find((e) => e.id === id).count++;
+  localStorage.setItem('cart_items',JSON.stringify(cart_products))
   // update the value of the quantity of the item
   i.parentElement.firstElementChild.innerHTML = cart_products.find(
     (e) => e.id === id
@@ -220,6 +223,7 @@ function plus(id, i) {
 function minus(id, i) {
   // minus Count of the item by one
   cart_products.find((e) => e.id === id).count--;
+  localStorage.setItem('cart_items',JSON.stringify(cart_products))
   let m = cart_products.find((e) => e.id === id);
   // update the value of the quantity of the item
   if (m.count == 0) {
